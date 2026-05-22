@@ -58,16 +58,27 @@ jobs:
       shell: bash
       working-directory: ${{github.workspace}}/build
       run: |
+        # boost-cmake hardcodes a defunct JFrog URL for Boost 1.71.0.
+        # Override to use archives.boost.io (the official Boost archive).
+        # Pass an empty SHA256 to skip hash verification — the JFrog CDN
+        # historically served inconsistent files so any hardcoded hash is
+        # unreliable; the URL itself is pinned to the official source.
+        BOOST_URL="https://archives.boost.io/release/1.71.0/source/boost_1_71_0.tar.bz2"
+
         if [ '${{ matrix.os }}' == 'ubuntu-latest' ]; then
           cmake -DBUILD_BOOST=${{ matrix.BUILD_BOOST }} \
                 -DENABLE_MPI=${{ matrix.ENABLE_MPI }} \
                 -DDISABLE_GRID=${{ matrix.DISABLE_GRID }} \
                 -DCMAKE_PREFIX_PATH=$HOME/eccodes \
+                -DBOOST_URL="${BOOST_URL}" \
+                -DBOOST_URL_SHA256="" \
                 $GITHUB_WORKSPACE
         else
           cmake -DBUILD_BOOST=${{ matrix.BUILD_BOOST }} \
                 -DENABLE_MPI=${{ matrix.ENABLE_MPI }} \
                 -DDISABLE_GRID=${{ matrix.DISABLE_GRID }} \
+                -DBOOST_URL="${BOOST_URL}" \
+                -DBOOST_URL_SHA256="" \
                 $GITHUB_WORKSPACE
         fi
 
