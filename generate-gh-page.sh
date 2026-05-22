@@ -7,6 +7,9 @@
 # Exit with nonzero exit code if anything fails
 set -e
 
+echo "cmake path: $(which cmake)"
+echo "cmake version: $(cmake --version)"
+
 # SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
@@ -14,7 +17,7 @@ function doCompileCXX {
     echo "Compile for C++"
     mkdir buildC_gh-page
     cd buildC_gh-page
-    cmake ..
+    cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ..
 
     make document
     cd html
