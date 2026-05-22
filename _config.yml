@@ -8,7 +8,7 @@ title: Parallel Analog Ensemble
 tagline: 'R and C++'
 description: 'An integrated package for parallel ensemble forecasts and more, implemented in R and C++.'
 url: https://analogensemble.ddns.net/AnalogsEnsemble
-baseurl: '/AnalogsEnsemble'
+baseurl: ''
 # the optional subpath of your site, e.g. "/blog"
 # NB: This applies to all pages in your Jekyll site.
 # If you want to move just the blog index pages but keep
