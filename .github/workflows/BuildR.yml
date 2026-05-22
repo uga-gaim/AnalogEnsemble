@@ -10,15 +10,27 @@ jobs:
 
     strategy:
       matrix:
-        os: ['ubuntu-latest', 'macOS-latest']
-    
+        # macos-latest now points to macOS 15 (ARM) since Aug 2025, which has
+        # R installer permission issues with setup-r. Pin to macos-14 (stable).
+        os: ['ubuntu-latest', 'macos-14']
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
       - uses: r-lib/actions/setup-r@v2
-        
-      - name: Install NetCDF when necessary 
-        run: if [ '${{ matrix.os }}' == 'ubuntu-latest' ]; then sudo apt-get install libnetcdf-dev libnetcdf-c++4-dev; fi
-      
+        with:
+          # Pin to R 4.5.x to avoid R 4.6.0 dropping C++14 support,
+          # which breaks RAnEn's src/Makevars (CXX14 is now defunct in R 4.6).
+          # Remove this pin once RAnEn is updated to use C++17 or later.
+          r-version: '4.5.3'
+
+      - name: Install NetCDF when necessary
+        run: |
+          if [ '${{ matrix.os }}' == 'ubuntu-latest' ]; then
+            sudo apt-get update
+            sudo apt-get install -y libnetcdf-dev libnetcdf-c++4-dev
+          fi
+
       - name: Install R dependencies
         run: install.packages(c('Rcpp', 'BH', 'ncdf4', 'abind'))
         shell: Rscript {0}
@@ -26,7 +38,7 @@ jobs:
       - name: Install RAnEn
         run: install.packages("https://github.com/Weiming-Hu/AnalogsEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
         shell: Rscript {0}
-      
+
       - name: Test
         working-directory: ${{github.workspace}}/RAnalogs/tests
         run: Rscript test_all.R
