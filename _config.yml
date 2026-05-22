@@ -7,7 +7,7 @@ highlighter: rouge
 title: Parallel Analog Ensemble
 tagline: 'R and C++'
 description: 'An integrated package for parallel ensemble forecasts and more, implemented in R and C++.'
-url: https://weiming-hu.github.io/AnalogsEnsemble/
+url: https://weiming.uga.edu/AnalogsEnsemble/
 baseurl: '/AnalogsEnsemble'
 # the optional subpath of your site, e.g. "/blog"
 # NB: This applies to all pages in your Jekyll site.
