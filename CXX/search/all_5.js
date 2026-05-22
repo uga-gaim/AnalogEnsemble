@@ -1,11 +1,4 @@
 var searchData=
 [
-  ['basicdata_0',['BasicData',['../class_basic_data.html',1,'BasicData'],['../class_basic_data.html#ace60c0431ec876c0163aee9a50c98f27',1,'BasicData::BasicData()'],['../class_basic_data.html#a65a1397148d14f664bd8dd979c8d21bc',1,'BasicData::BasicData(const Parameters &amp;, const Stations &amp;, const Times &amp;)'],['../class_basic_data.html#a503d998763e0b3f5080f48ce795997d8',1,'BasicData::BasicData(const BasicData &amp;orig)']]],
-  ['basicdata_2ecpp_1',['BasicData.cpp',['../_basic_data_8cpp.html',1,'']]],
-  ['basicdata_2eh_2',['BasicData.h',['../_basic_data_8h.html',1,'']]],
-  ['begin_3',['begin',['../class_grid.html#a184368fdaace08fcc33ae64ffee972df',1,'Grid']]],
-  ['bmdim_2eh_4',['BmDim.h',['../_bm_dim_8h.html',1,'']]],
-  ['bmtype_5',['BmType',['../_bm_dim_8h.html#ac701e9d6dedc02de60794649e5bfd54c',1,'BmDim.h']]],
-  ['boost_5fno_5fauto_5fptr_6',['BOOST_NO_AUTO_PTR',['../_bm_dim_8h.html#a8f5c030105c10fbe6953ed183115511a',1,'BmDim.h']]],
-  ['broadcastvector_7',['broadcastVector',['../namespace_functions_m_p_i.html#a382eb9ef845a391e416a56d077fde9fb',1,'FunctionsMPI::broadcastVector(const std::vector&lt; std::size_t &gt; &amp;send, std::vector&lt; std::size_t &gt; &amp;recv, int rank, Verbose verbose)'],['../namespace_functions_m_p_i.html#adf82e29c245edd4ee0325ea8c55c5007',1,'FunctionsMPI::broadcastVector(const std::vector&lt; bool &gt; &amp;send, std::vector&lt; bool &gt; &amp;recv, int rank, Verbose verbose)']]]
+  ['6_0',['PAnEn 4.4.6',['../md__2_users_2huwx_2github_2_g_a_i_m_2_analog_ensemble_2_n_e_w_s.html',1,'']]]
 ];

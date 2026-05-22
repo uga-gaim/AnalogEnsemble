@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_5f_0',['name_',['../class_parameter.html#af00400066ac43c6b90bb86a814771b06',1,'Parameter::name_()'],['../class_station.html#a63f10bbe0cdee5b0fd0f533cf5441ed9',1,'Station::name_()']]],
+  ['name_5f_0',['name_',['../class_parameter.html#af00400066ac43c6b90bb86a814771b06',1,'Parameter::name_'],['../class_station.html#a63f10bbe0cdee5b0fd0f533cf5441ed9',1,'Station::name_']]],
   ['nan_5fcount_5f_1',['nan_count_',['../class_grid.html#a667025f2e86368ca16a6abd5e2dd1290',1,'Grid']]],
   ['no_5fnorm_2',['no_norm',['../class_config.html#adfe96cc06d2a8543c14a300033fe05f8',1,'Config']]],
   ['no_5fnorm_5f_3',['no_norm_',['../class_an_en_i_s.html#a0baaea40bb695b27650c2149593530fe',1,'AnEnIS']]],
