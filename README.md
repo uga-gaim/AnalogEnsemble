@@ -1,6 +1,6 @@
 # [PAnEn: Parallel Analog Ensemble](https://weiming-hu.github.io/AnalogsEnsemble/)
 
-[![DOI](https://zenodo.org/badge/130093968.svg)](https://zenodo.org/badge/latestdoi/130093968)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.3483223-blue)](https://zenodo.org/badge/latestdoi/130093968)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e4b8f97d5f3a41029741579f648c8e38)](https://www.codacy.com/gh/Weiming-Hu/AnalogsEnsemble/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Weiming-Hu/AnalogsEnsemble&amp;utm_campaign=Badge_Grade)
 [![Build C++](https://github.com/Weiming-Hu/AnalogsEnsemble/workflows/Build%20C++/badge.svg)](https://github.com/Weiming-Hu/AnalogsEnsemble/actions?query=workflow%3A%22Build+C%2B%2B%22)
