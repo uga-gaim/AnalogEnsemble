@@ -18,10 +18,12 @@ if test -z "${R_HOME}"; then
     echo "could not determine R_HOME"
     exit 1
 fi
-CXX14=`"${R_HOME}/bin/R" CMD config CXX14`
-CXX14STD=`"${R_HOME}/bin/R" CMD config CXX14STD`
-CXX="${CXX14} ${CXX14STD}"
-CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXX14FLAGS`
+# Use R's default C++ compiler and flags rather than pinning a standard here.
+# Asking for a specific generation (CXX14, CXX17, ...) breaks the moment R
+# retires it: R CMD config returns empty and CXX ends up blank. The standard
+# the package is actually compiled with is declared by CXX_STD in src/Makevars.
+CXX=`"${R_HOME}/bin/R" CMD config CXX`
+CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXXFLAGS`
 
 AC_LANG(C++)
 

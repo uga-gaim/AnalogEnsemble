@@ -8,7 +8,7 @@
 
 # This file builds the AnEnMPI
 
-cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 project(AnEnMPI VERSION ${GRAND_VERSION} LANGUAGES CXX)
 message(STATUS "Configuring the class ${PROJECT_NAME}")
 

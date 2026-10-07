@@ -8,7 +8,7 @@
 #
 # This file builds RAnEn with CMake
 
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.10)
 project(RAnEn LANGUAGES CXX C)
 
 # Find packages

@@ -8,7 +8,7 @@
 
 # This file builds the utility grib_convert. This target depends on targets AnEnIO.
 
-cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 project(grib_convert VERSION ${GRAND_VERSION} LANGUAGES CXX)
 message(STATUS "Configuring the executable ${PROJECT_NAME}")
 

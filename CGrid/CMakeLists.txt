@@ -9,7 +9,7 @@
 # This file adds all source files and export the Grid library
 
 project(Grid VERSION ${GRAND_VERSION} LANGUAGES CXX)
-cmake_minimum_required(VERSION 3.9 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 message(STATUS "Configuring the library Grid")
 
 # Define the source files

@@ -14,7 +14,7 @@
 # This script does not actually carry out the installation process.
 #
 
-cmake_minimum_required (VERSION 3.1)
+cmake_minimum_required (VERSION 3.10)
 
 set(LIBRARY_NAME "RAnEn")
 set(LIBRARY_VERSION "${GRAND_VERSION}")

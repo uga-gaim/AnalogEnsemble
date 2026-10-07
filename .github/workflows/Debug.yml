@@ -1,9 +1,16 @@
 name: Debug
-on: [push]
+
+# Interactive tmate session for troubleshooting a build.
+# Deliberately NOT on push: tmate blocks the runner until the job is cancelled
+# or hits the 6-hour ceiling, so running it automatically burns ~360 minutes of
+# Actions time per push. Start it by hand from the Actions tab when needed.
+on: workflow_dispatch
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
