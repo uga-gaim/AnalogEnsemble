@@ -416,7 +416,7 @@
   // Tunable swarm parameters. Also reachable at runtime as window.SwarmConfig,
   // so you can experiment from the browser console without reloading.
   Particle.config = {
-    damping:    0.8,  // velocity decay per frame; must stay below 1.0.
+    damping:    0.7,  // velocity decay per frame; must stay below 1.0.
                       // Steady-state speed scales as k / (1 - k), so 0.8 is
                       // roughly half speed and 0.95 roughly double.
     jitter:     0.75, // magnitude of the random wobble layered on the flow field
