@@ -3,15 +3,15 @@ layout: default
 ---
 
 
-# [PAnEn: Parallel Analog Ensemble](https://weiming-hu.github.io/AnalogsEnsemble/)
+# [PAnEn: Parallel Analog Ensemble](https://analogensemble.ddns.net/)
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.3483223-blue)](https://zenodo.org/badge/latestdoi/130093968)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build C++](https://github.com/Weiming-Hu/AnalogsEnsemble/workflows/Build%20C++/badge.svg)](https://github.com/Weiming-Hu/AnalogsEnsemble/actions?query=workflow%3A%22Build+C%2B%2B%22)
-[![Build R](https://github.com/Weiming-Hu/AnalogsEnsemble/actions/workflows/BuildR.yml/badge.svg)](https://github.com/Weiming-Hu/AnalogsEnsemble/actions/workflows/BuildR.yml)
-[![codecov](https://codecov.io/gh/Weiming-Hu/AnalogsEnsemble/branch/master/graph/badge.svg?token=tcGGOTyHHk)](https://codecov.io/gh/Weiming-Hu/AnalogsEnsemble)
+[![Build C++](https://github.com/uga-gaim/AnalogEnsemble/workflows/Build%20C++/badge.svg)](https://github.com/uga-gaim/AnalogEnsemble/actions?query=workflow%3A%22Build+C%2B%2B%22)
+[![Build R](https://github.com/uga-gaim/AnalogEnsemble/actions/workflows/BuildR.yml/badge.svg)](https://github.com/uga-gaim/AnalogEnsemble/actions/workflows/BuildR.yml)
+[![codecov](https://codecov.io/gh/uga-gaim/AnalogEnsemble/branch/master/graph/badge.svg?token=tcGGOTyHHk)](https://codecov.io/gh/uga-gaim/AnalogEnsemble)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/Weiming-Hu/AnalogsEnsemble/master?urlpath=rstudio)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/uga-gaim/AnalogEnsemble/master?urlpath=rstudio)
 [![dockeri.co](https://img.shields.io/docker/pulls/weiminghu123/panen)](https://hub.docker.com/r/weiminghu123/panen)
 
 <!-- vscode-markdown-toc -->
@@ -45,7 +45,7 @@ The easiest way to use this package is to install the R package, 'RAnEn'. C++ li
 
 To cite this package, you have several options:
 
-- Using `LaTex`: Please use [this file](https://github.com/Weiming-Hu/AnalogsEnsemble/blob/master/RAnalogs/RAnEn/inst/CITATION) for citation.
+- Using `LaTex`: Please use [this file](https://github.com/uga-gaim/AnalogEnsemble/blob/master/RAnalogs/RAnEn/inst/CITATION) for citation.
 - Using `R`: Simply type `citation('RAnEn')` and the citation message will be printed.
 - Using plain text: Please use the following citation format:
 
@@ -70,10 +70,10 @@ To install `RAnEn`, please install the following packages first:
 The following R command install the latest `RAnEn`.
 
 ```r
-install.packages("https://github.com/Weiming-Hu/AnalogsEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
+install.packages("https://github.com/uga-gaim/AnalogEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
 ```
 
-That's it. You are good to go. Please refer to [tutorials](#tutorials) or the [R documentation](https://weiming-hu.github.io/AnalogsEnsemble/R/) to learn more about using `RAnEn`. You might also want to install [RAnEnExtra](https://github.com/Weiming-Hu/RAnEnExtra) package with functions for visualization and verification. After `RAnEn` installation, you can simply run `devtools::install_github("Weiming-Hu/RAnEnExtra")`.
+That's it. You are good to go. Please refer to [tutorials](#tutorials) or the [R documentation](https://analogensemble.ddns.net/R/) to learn more about using `RAnEn`. You might also want to install [RAnEnExtra](https://github.com/Weiming-Hu/RAnEnExtra) package with functions for visualization and verification. After `RAnEn` installation, you can simply run `devtools::install_github("Weiming-Hu/RAnEnExtra")`.
 
 **Mac users**: if the package shows that `OpenMP` is not supported. You can do one of the followings: 
 
@@ -136,7 +136,7 @@ conda install -c conda-forge netcdf-cxx4 eccodes doxygen  -y
 # If you need libTorch, please go ahead to https://pytorch.org/get-started/locally/ and select
 # Stable -> [Your OS] -> LibTorch -> C++/Java -> [Compute Platform] -> cxx11 ABI version
 # 
-# Please see https://github.com/Weiming-Hu/AnalogsEnsemble/issues/86#issuecomment-1047442579 for instructions
+# Please see https://github.com/uga-gaim/AnalogEnsemble/issues/86#issuecomment-1047442579 for instructions
 # on how to inlcude libTorch during the cmake process.
 
 # Optional dependency: MPI
@@ -147,7 +147,7 @@ After the dependencies are installed, let's build `CAnEn`:
 
 ```bash
 # Download the source files (~10 Mb)
-wget https://github.com/Weiming-Hu/AnalogsEnsemble/archive/master.zip
+wget https://github.com/uga-gaim/AnalogEnsemble/archive/master.zip
 
 # Unzip
 unzip master.zip
@@ -188,7 +188,7 @@ You can change the default of the parameters, for example, `cmake -DCMAKE_INSTAL
 
 ### <a name='High-PerformanceComputingandSupercomputers'></a>High-Performance Computing and Supercomputers
 
-[Here](https://github.com/Weiming-Hu/AnalogsEnsemble/issues/86) is a list of instructions to build and install `AnEn` on supercomputers. 
+[Here](https://github.com/uga-gaim/AnalogEnsemble/issues/86) is a list of instructions to build and install `AnEn` on supercomputers. 
 
 
 ### <a name='MPIandOpenMP'></a>MPI and OpenMP 
@@ -221,9 +221,9 @@ So if the platform support heterogeneous task layout, users can theoretically al
 
 ## <a name='Tutorials'></a>Tutorials
 
-Tutorials can be accessed on [binder](https://mybinder.org/v2/gh/Weiming-Hu/AnalogsEnsemble/master?urlpath=rstudio) or be found in [this directory](https://github.com/Weiming-Hu/AnalogsEnsemble/tree/master/RAnalogs/examples)
+Tutorials can be accessed on [binder](https://mybinder.org/v2/gh/uga-gaim/AnalogEnsemble/master?urlpath=rstudio) or be found in [this directory](https://github.com/uga-gaim/AnalogEnsemble/tree/master/RAnalogs/examples)
 
-Here are also some tips and caveats in [this ticket](https://github.com/Weiming-Hu/AnalogsEnsemble/issues/81).
+Here are also some tips and caveats in [this ticket](https://github.com/uga-gaim/AnalogEnsemble/issues/81).
 
 ## <a name='References'></a>References
 
@@ -236,7 +236,7 @@ Here are also some tips and caveats in [this ticket](https://github.com/Weiming-
 
 ## <a name='Feedbacks'></a>Feedbacks
 
-We appreciate collaborations and feedbacks from users. Please contact the maintainer [Weiming Hu](https://weiming-hu.github.io) through [weiming@psu.edu](weiming@psu.edu) or submit tickets if you have any problems.
+We appreciate collaborations and feedbacks from users. Please contact the maintainer [Weiming Hu](https://weiming.uga.edu) through [weiming@psu.edu](weiming@psu.edu) or submit tickets if you have any problems.
 
 Thank you!
 

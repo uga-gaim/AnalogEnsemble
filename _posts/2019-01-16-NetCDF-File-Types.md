@@ -31,11 +31,11 @@ _Updates on 2021/12/16_
 
 <!-- vim-markdown-toc -->
 
-Under the [apps](https://github.com/Weiming-Hu/AnalogsEnsemble/tree/master/apps) directory, there are several C++ programs that implements different phases of generating analog ensembles, including calculating standard deviations, calculating similarity metrics, and selecting analog forecasts, and some other programs for data pre-processing. Currently, all input and output files are in NetCDF format. This articles documents variables and dimensions expected in each file type based on the file type, for example, Forecasts, Observations, Similarity, and so on.
+Under the [apps](https://github.com/uga-gaim/AnalogEnsemble/tree/master/apps) directory, there are several C++ programs that implements different phases of generating analog ensembles, including calculating standard deviations, calculating similarity metrics, and selecting analog forecasts, and some other programs for data pre-processing. Currently, all input and output files are in NetCDF format. This articles documents variables and dimensions expected in each file type based on the file type, for example, Forecasts, Observations, Similarity, and so on.
 
 ## File Types
 
-The defined [file types](https://weiming-hu.github.io/AnalogsEnsemble/CXX/class_an_en_i_o.html#addbfb455f641a394c14907163874d8fe) include:
+The defined [file types](https://analogensemble.ddns.net/CXX/class_an_en_i_o.html#addbfb455f641a394c14907163874d8fe) include:
 
 - Forecasts
 - Observations
@@ -46,7 +46,7 @@ The defined [file types](https://weiming-hu.github.io/AnalogsEnsemble/CXX/class_
 
 Each file type is associated with a list of expected dimensions and a list of expected variables. Those variables and dimensions are required to ensure the correctness and performance of C++ program. Some variables can also be very helpful during visualization.
 
-### [Forecasts](https://weiming-hu.github.io/AnalogsEnsemble/CXX/class_forecasts.html)
+### [Forecasts](https://analogensemble.ddns.net/CXX/class_forecasts.html)
 
 An example `Forecasts` file includes the following content:
 
@@ -76,11 +76,11 @@ An example `Forecasts` file includes the following content:
 - **StationNames** are the names of the forecast stations or grid points.
 - **Xs** are the x coordinates of the forecast stations or grid points.
 - **Ys** are the y coordinates of the forecast stations or grid points.
-- **Times** are the time representation of forecasts. It is the number of seconds since the origin, [1970-01-01 00:00:00 UTC](https://weiming-hu.github.io/AnalogsEnsemble/CXX/classanen_time_1_1_times.html#a7e08602fb0628df1c5f1cccbb98baeb1) by default.
+- **Times** are the time representation of forecasts. It is the number of seconds since the origin, [1970-01-01 00:00:00 UTC](https://analogensemble.ddns.net/CXX/classanen_time_1_1_times.html#a7e08602fb0628df1c5f1cccbb98baeb1) by default.
 - **FLTs** are the time representation of forecast lead times. It is the number of seconds since the initialization of the forecast model.
 - **Data** is a 4-dimensional array that stores the actual forecast values.
 
-### [Observations](https://weiming-hu.github.io/AnalogsEnsemble/CXX/class_observations.html)
+### [Observations](https://analogensemble.ddns.net/CXX/class_observations.html)
 
 An example `Observations` file looks pretty much similar `Forecasts`, except that the variable **Data** is a 3-dimensional array without forecast lead times.
 
@@ -102,7 +102,7 @@ An example `Observations` file looks pretty much similar `Forecasts`, except tha
    num_times  Size:496
 ```
 
-### [Analogs](https://weiming-hu.github.io/AnalogsEnsemble/CXX/class_analogs.html)
+### [Analogs](https://analogensemble.ddns.net/CXX/class_analogs.html)
 
 An example `Analogs` file includes the following content:
 
@@ -130,18 +130,18 @@ An example `Analogs` file includes the following content:
     member_num_times  Size:1000
 ```
 
-- **Analogs** is a 5-dimensional array that stores analog forecasts. More information about analogs can be found at [here](https://weiming-hu.github.io/AnalogsEnsemble/CXX/class_analogs.html).
+- **Analogs** is a 5-dimensional array that stores analog forecasts. More information about analogs can be found at [here](https://analogensemble.ddns.net/CXX/class_analogs.html).
 - **FLTs** is the time representation of the analog forecasts. It is the number of seconds since the initialization of the forecast model.
 - **StationNames** are the names of stations for analog forecasts.
 - **Xs** are the x coordinates of stations for analog forecasts.
 - **Ys** are the y coordinates of stations for analog forecasts.
-- **Times** is the time representation of the analog forecasts. It is the number of seconds since the origin, [1970-01-01 00:00:00 UTC](https://weiming-hu.github.io/AnalogsEnsemble/CXX/classanen_time_1_1_times.html#a7e08602fb0628df1c5f1cccbb98baeb1) by default.
+- **Times** is the time representation of the analog forecasts. It is the number of seconds since the origin, [1970-01-01 00:00:00 UTC](https://analogensemble.ddns.net/CXX/classanen_time_1_1_times.html#a7e08602fb0628df1c5f1cccbb98baeb1) by default.
 - **MemberStationNames** are the names of stations for analog members. This can be used together with the search station index in the fifth dimension to get the exact details of search station used.
 - **MemberXs** are the x coordinates of stations for analog members. This can be used together with the search station index in the fifth dimension to get the exact details of search station used.
 - **MemberYs** are the y coordinates of stations for analog members. This can be used together with the search station index in the fifth dimension to get the exact details of search station used.
 - **MemberTimes** is the time representation of the search times. This can be used together with the search time index in the fifth dimension to know what historical time this member belongs to.
 
-### [Similarity](https://weiming-hu.github.io/AnalogsEnsemble/CXX/class_similarity_matrices.html)
+### [Similarity](https://analogensemble.ddns.net/CXX/class_similarity_matrices.html)
 
 An example `Similarity` file includes the following content:
 
@@ -180,14 +180,14 @@ An example `Similarity` file includes the following content:
 - **StationNames** are names of stations or grid points for which similaity is generated.
 - **Xs** are x coordinates of stations or grid points for which similaity is generated.
 - **Ys** are y coordinates of stations or grid points for which similaity is generated.
-- **Times** is the time representation of the similarity. It is the number of seconds since the origin, [1970-01-01 00:00:00 UTC](https://weiming-hu.github.io/AnalogsEnsemble/CXX/classanen_time_1_1_times.html#a7e08602fb0628df1c5f1cccbb98baeb1) by default.
+- **Times** is the time representation of the similarity. It is the number of seconds since the origin, [1970-01-01 00:00:00 UTC](https://analogensemble.ddns.net/CXX/classanen_time_1_1_times.html#a7e08602fb0628df1c5f1cccbb98baeb1) by default.
 - **FLTs** is the time representation of the similarity. It is the number of seconds since the initialization of the forecast model.
 - **SearchTimes** are times for the complete search period. This can be used together with the search time index in the fifth dimension to know what historical forecast this similarity is generated from.
 - **SearchStationNames** are stations names for the complete search data. This can be used together with the search station index in the fifth dimension to know what station/grid point is used to generate similarity.
 - **SearchXs** are x coordinates for the complete search stations. This can be used together with the search station index in the fifth dimension to know what station/grid point is used to generate similarity.
 - **SearchYs** are y coordinates for the complete search stations. This can be used together with the search station index in the fifth dimension to know what station/grid point is used to generate similarity.
 
-### [StandardDeviation](https://weiming-hu.github.io/AnalogsEnsemble/CXX/class_standard_deviation.html)
+### [StandardDeviation](https://analogensemble.ddns.net/CXX/class_standard_deviation.html)
 
 An example `StandardDeviation` file includes the following content:
 

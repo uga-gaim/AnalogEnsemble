@@ -413,6 +413,25 @@
     this.reset();
   }, pp = Particle.prototype;
 
+  // Tunable swarm parameters. Also reachable at runtime as window.SwarmConfig,
+  // so you can experiment from the browser console without reloading.
+  Particle.config = {
+    damping:    0.8,  // velocity decay per frame; must stay below 1.0.
+                      // Steady-state speed scales as k / (1 - k), so 0.8 is
+                      // roughly half speed and 0.95 roughly double.
+    jitter:     0.75, // magnitude of the random wobble layered on the flow field
+    fieldTime:  5000, // ms for the flow field to evolve; larger is slower
+    fieldScale: 200,  // spatial size of the swirls; larger is broader
+
+    // On load the flow field pulls every particle onto the same few streamlines
+    // within a second or two. These add extra scatter at startup that decays
+    // away, so the swarm gathers into strands gradually instead of all at once.
+    jitterStart: 3.0,  // starting jitter; set equal to jitter above to disable
+    jitterDecay: 10000 // ms for the extra scatter to fade (about 3x this to settle)
+  };
+
+  Particle.t0 = Date.now();
+
   pp.reset = function() {
     // new random position
     this.p.x = this.t.x = Math.floor(this.r.random() * this.b.x);
@@ -431,11 +450,14 @@
       this.reset();
     }
     
-    var xx = (this.p.x / 200),
-        yy = (this.p.y / 200),
-        zz = (Date.now() / 5000),
+    var cfg = Particle.config,
+        xx = (this.p.x / cfg.fieldScale),
+        yy = (this.p.y / cfg.fieldScale),
+        zz = (Date.now() / cfg.fieldTime),
         a  = (this.r.random() * Math.Tau),
-        rnd= (this.r.random()  / 4);
+        jit= cfg.jitter + (cfg.jitterStart - cfg.jitter) *
+             Math.exp(-(Date.now() - Particle.t0) / cfg.jitterDecay),
+        rnd= (this.r.random() * jit);
 
     // calculate the new velocity based on the noise
     // random velocity in a random direction
@@ -464,9 +486,7 @@
     }
     
     // keep a copy of the current position, for a nice line between then and now and add velocity
-    this.p.move(this.t).add(this.v.mul(.9)); // slow down the velocity slightly
-
-    // The above parameter sets the speed of cursors
+    this.p.move(this.t).add(this.v.mul(cfg.damping));
 
     // wrap around the edges
     if(this.p.wrap2d(this.b)) {
@@ -481,6 +501,7 @@
   };
 
   root.Particle = Particle;
+  root.SwarmConfig = Particle.config;
 }(window));
 
 window.addEventListener('load', function() {

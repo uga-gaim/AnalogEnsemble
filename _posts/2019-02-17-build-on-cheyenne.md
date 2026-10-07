@@ -28,7 +28,7 @@ Several things to be noted before we carry on:
 
 ```
 # Download the source files
-wget https://github.com/Weiming-Hu/AnalogsEnsemble/archive/master.zip
+wget https://github.com/uga-gaim/AnalogEnsemble/archive/master.zip
 
 # Unzip the tarball
 unzip master.zip
@@ -69,4 +69,4 @@ If you log out and log back in, you need to at least load the GNU module for `an
 module load gnu/9.1.0
 ```
 
-If you encountered any problems, please open a ticket [here](https://github.com/Weiming-Hu/AnalogsEnsemble/issues).
+If you encountered any problems, please open a ticket [here](https://github.com/uga-gaim/AnalogEnsemble/issues).

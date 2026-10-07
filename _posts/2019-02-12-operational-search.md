@@ -17,9 +17,9 @@ Introduction
 
 Prediction accuracy of the Analog Ensemble depends on the quality of analogs. Presumably, better analogs will generate better predictions. In an operational model, it is likely that the historical forecasts in the near past are the most similar to the current forecast. Therefore, in operational mode, as each day passes, it is added to the historical repository.
 
-This article shows an example of how to use `RAnEn` with an operational search. It is strongly suggested to go over the [demo 1](https://weiming-hu.github.io/AnalogsEnsemble/2018/11/04/demo-1-RAnEn-basics.html) prior to this tutorial.
+This article shows an example of how to use `RAnEn` with an operational search. It is strongly suggested to go over the [demo 1](https://analogensemble.ddns.net/2018/11/04/demo-1-RAnEn-basics.html) prior to this tutorial.
 
 Access
 ------------
 
-This tutorial can be accessed on binder. Please click [here](https://mybinder.org/v2/gh/Weiming-Hu/AnalogsEnsemble/master?urlpath=rstudio) to start an interactive session and go over the tutorial under `RAnalogs/examples`. Or you can download the repository and use the [R markdown file](https://github.com/Weiming-Hu/AnalogsEnsemble/blob/master/RAnalogs/examples/demo-3_operational-search.Rmd).
+This tutorial can be accessed on binder. Please click [here](https://mybinder.org/v2/gh/uga-gaim/AnalogEnsemble/master?urlpath=rstudio) to start an interactive session and go over the tutorial under `RAnalogs/examples`. Or you can download the repository and use the [R markdown file](https://github.com/uga-gaim/AnalogEnsemble/blob/master/RAnalogs/examples/demo-3_operational-search.Rmd).

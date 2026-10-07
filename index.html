@@ -120,12 +120,12 @@
 install.packages(c('Rcpp', 'BH'))
 
 # Install RAnEn
-install.packages("https://analogensemble.ddns.net/AnalogsEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
+install.packages("https://github.com/uga-gaim/AnalogEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
                         </pre>
 
                         <p class="lead"> To download the <i>PAnEn C++</i> package, please use the following command:</p>
                         <pre class="prettyprint">
-wget https://analogensemble.ddns.net/AnalogsEnsemble/archive/master.zip
+wget https://github.com/uga-gaim/AnalogEnsemble/archive/master.zip
                         </pre>
                         <p class="lead">For more installation options, please refer to the <a style="display: inline;" href="https://analogensemble.ddns.net/doc#installation">documentation</a>.</p>
                     </div>
@@ -140,7 +140,7 @@ wget https://analogensemble.ddns.net/AnalogsEnsemble/archive/master.zip
                         <h2>Tutorials</h2>
                         <p class="lead">Need help starting? Check out our tutorials <a href="https://analogensemble.ddns.net/tags.html#tutorial" style="display: inline;">here</a>.</p>
 
-                        <p class="lead">Tired of setting up the environment? Use this interactive R session from <a href="https://mybinder.org/v2/gh/Weiming-Hu/AnalogsEnsemble/master?urlpath=rstudio" style="display: inline;">Binder</a>. Examples are inside <i>RAnalogs/examples</i>.</p>
+                        <p class="lead">Tired of setting up the environment? Use this interactive R session from <a href="https://mybinder.org/v2/gh/uga-gaim/AnalogEnsemble/master?urlpath=rstudio" style="display: inline;">Binder</a>. Examples are inside <i>RAnalogs/examples</i>.</p>
 
                         <p class="lead">Still having problems? You are always covered. Please contact us and we are happy to help.</p>
                     </div>
@@ -177,8 +177,13 @@ wget https://analogensemble.ddns.net/AnalogsEnsemble/archive/master.zip
         <!-- Custom JavaScript for this theme -->
         <script src="js/scrolling-nav.js"></script>
 
-        <script src='https://codepen.io/ImagineProgramming/pen/bcmyD.js'></script>
-        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/188512/codepen-utilities.min.js'></script>
+        <!-- Shim for the two globals the now-dead codepen-utilities.min.js provided -->
+        <script>
+            window.requestAnimFrame = (window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                function (cb) { return setTimeout(cb, 1000 / 60); }).bind(window);
+            Math.Tau = Math.PI * 2;
+        </script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5.1/dat.gui.min.js'></script>
         <script src="js/particles.js"></script>

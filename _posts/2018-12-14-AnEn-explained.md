@@ -9,7 +9,7 @@ tags:
 
 The following schematic diagram shows the four steps to generate a four-member ensemble forecast.
 
-![AnEn-scheme](https://github.com/Weiming-Hu/AnalogsEnsemble/raw/gh-pages/assets/posts/2018-12-14-AnEn-explained/AnEn-schema.png)
+![AnEn-scheme](https://github.com/uga-gaim/AnalogEnsemble/raw/gh-pages/assets/posts/2018-12-14-AnEn-explained/AnEn-schema.png)
 
 - Step 1: The process starts with a current deterministic multivariate prediction and a set of historical predictions from a deterministic weather model. The multivariate prediction includes surface temperature, humidity, wind speed, and so on. Corresponding observations to each historical forecasts are also collected.
 - Step 2: A number of historical predictions are identified based on their similarity to the current multivariate prediction. This similarity is also time-dependent, meaning that, instead of point-to-point comparison, it also compares the trend of each weather variable within a short time range.
@@ -33,7 +33,7 @@ Of course, in reality, the similarity metric is a time-dependent and multivariat
 
 ## References
 
-- [Analog Ensemble Package](https://weiming-hu.github.io/AnalogsEnsemble/)
+- [Analog Ensemble Package](https://analogensemble.ddns.net/)
 - [A Beginners Introduction to the Analog Ensemble Technique](https://ral.ucar.edu/sites/default/files/public/images/events/WISE_documentation_20170725_Final.pdf)
 - [Predictor-weighting strategies for probabilistic wind power forecasting with an analog ensemble](https://www.schweizerbart.de/papers/metz/detail/24/84737/Predictor_weighting_strategies_for_probabilistic_wind_power_forecasting_with_an_analog_ensemble)
 - [Short-term photovoltaic power forecasting using Artificial Neural Networks and an Analog Ensemble](https://www.sciencedirect.com/science/article/pii/S0960148117301386)

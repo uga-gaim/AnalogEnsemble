@@ -18,8 +18,8 @@ To install `RAnEn` on Windows, please check the following requirements:
 If you've got the following error on Windows when installing the `RAnEn` package:
 
 ```
-> install.packages("https://github.com/Weiming-Hu/AnalogsEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
-trying URL 'https://github.com/Weiming-Hu/AnalogsEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz'
+> install.packages("https://github.com/uga-gaim/AnalogEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
+trying URL 'https://github.com/uga-gaim/AnalogEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz'
 Content type 'application/octet-stream' length 114102 bytes (111 KB)
 downloaded 111 KB
 
@@ -94,4 +94,4 @@ Finally, restart a R session and try installing the package again. If problems r
 
 Thank you.
 
-[Weiming Hu](https://weiming.ddns.net)
+[Weiming Hu](https://weiming.uga.edu)

@@ -17,7 +17,7 @@ Introduction
 
 This short tutorial walks you through the steps of converting observations stored in a CSV file to an R list that have the required variables by `RAnEn`.
 
-It is recommended to use [binder](https://mybinder.org/v2/gh/Weiming-Hu/AnalogsEnsemble/master?urlpath=rstudio) and `.Rmd` files will guide you through the script line by line.
+It is recommended to use [binder](https://mybinder.org/v2/gh/uga-gaim/AnalogEnsemble/master?urlpath=rstudio) and `.Rmd` files will guide you through the script line by line.
 
 You will learn the followings:
 
@@ -28,4 +28,4 @@ You will learn the followings:
 Access
 ------------
 
-This tutorial can be accessed on binder. Please click [here](https://mybinder.org/v2/gh/Weiming-Hu/AnalogsEnsemble/master?urlpath=rstudio) to start an interactive session and go over the tutorial under `RAnalogs/examples`. Or you can download the repository and use the [R markdown file](https://github.com/Weiming-Hu/AnalogsEnsemble/blob/master/RAnalogs/examples/demo-5_observation-conversion.Rmd) directly.
+This tutorial can be accessed on binder. Please click [here](https://mybinder.org/v2/gh/uga-gaim/AnalogEnsemble/master?urlpath=rstudio) to start an interactive session and go over the tutorial under `RAnalogs/examples`. Or you can download the repository and use the [R markdown file](https://github.com/uga-gaim/AnalogEnsemble/blob/master/RAnalogs/examples/demo-5_observation-conversion.Rmd) directly.

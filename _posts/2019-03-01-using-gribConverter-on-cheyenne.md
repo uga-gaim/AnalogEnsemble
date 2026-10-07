@@ -20,9 +20,9 @@ tags:
 
 This tutorial shows how to use the data preprocessing tools (`gribConverter`, `windFieldCalculator`) in the AnEn package to reformat the data to the correct form that can be directly used by a number of computation tools (`similarityCalculator`, `analogGenerator`, `RAnEn`) to generate analog ensembles. Addition to that, this tutorial also shows how to automate and parallelize the process on Cheyenne supercomputers.
 
-This tutorial assumes the basic knowledge on bash script language and that `AnEn` package has already been successfully installed. More information of how to install `AnEn` on Cheyenne can be found [here](https://weiming-hu.github.io/AnalogsEnsemble/2019/02/17/build-on-cheyenne.html).
+This tutorial assumes the basic knowledge on bash script language and that `AnEn` package has already been successfully installed. More information of how to install `AnEn` on Cheyenne can be found [here](https://analogensemble.ddns.net/2019/02/17/build-on-cheyenne.html).
 
-This tutorial also assumes that you have already built the AnEn tools. Instructions for building the tools can be found [here](https://weiming-hu.github.io/AnalogsEnsemble/2019/02/17/build-on-cheyenne.html).
+This tutorial also assumes that you have already built the AnEn tools. Instructions for building the tools can be found [here](https://analogensemble.ddns.net/2019/02/17/build-on-cheyenne.html).
 
 ## Data Preparation and Goals
 
@@ -41,7 +41,7 @@ A large collection (~5.4TB) of data from [North American Mesoscale Forecast mode
 200906  201003  201012  201109  201206  201303  201312  201409  201506  201603  201612  201709  201806
 ```
 
-Original NAM forecast files are organized by day, cycle time, and lead time. Each file is a compilation of parameters at all available locations/grid points. However, data that AnEn requires have a [different format](https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html#forecasts). This format requires the file to have parameters, grid points, times, and lead times information included. Our goal is convert the model output to this format.
+Original NAM forecast files are organized by day, cycle time, and lead time. Each file is a compilation of parameters at all available locations/grid points. However, data that AnEn requires have a [different format](https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html#forecasts). This format requires the file to have parameters, grid points, times, and lead times information included. Our goal is convert the model output to this format.
 
 Since the total file size exceeds 5 TB, it would be a better practice to avoid a huge file, but to have it broken down to chunks. Therefore, the files are grouped by month.
 
@@ -91,7 +91,7 @@ declare -a arr=("200810" "200811" "200812" "200901" "200902" "200903" "200904" "
 
 # Define the configuration file for gribConverter.
 # The file can be found at 
-# https://github.com/Weiming-Hu/AnalogsEnsemble/blob/master/apps/app_gribConverter/example/commonConfig.cfg
+# https://github.com/uga-gaim/AnalogEnsemble/blob/master/apps/app_gribConverter/example/commonConfig.cfg
 #
 converterConfig=/glade/u/home/wuh20/scratch/data/forecasts/forecasts.cfg
 

@@ -43,7 +43,7 @@ cmake -DBUILD_GRIBCONVERTER=ON -CMAKE_PREFIX_PATH=<path to eccodes> ..
 
 The library `eccodes` will be automatically built by default if `gribConverter` is built. However, in cases of failure during building `eccodes`, please install the library using your preferred package management tool, for example, `HomeBrew` on Mac OS or `apt-get` on Debian.
 
-More details please see [the documentation](https://weiming-hu.github.io/AnalogsEnsemble/#installation)
+More details please see [the documentation](https://analogensemble.ddns.net/#installation)
 
 #### Eccodes
 
@@ -152,20 +152,20 @@ parameters-new-name = 131_0
 
 ## Example
 
-An working example can be found [here](https://github.com/Weiming-Hu/AnalogsEnsemble/tree/master/apps/app_gribConverter/example).
+An working example can be found [here](https://github.com/uga-gaim/AnalogEnsemble/tree/master/apps/app_gribConverter/example).
 
 - commonConfig.cfg is the common configuration file that all files share. It includes basic options like parameters, times, and flts;
 - convertForecasts.sh is the script specifying the different options for files, includes `output` and `folder`.
 
 ## Caveat
 
-Please note in the file `convertForecasts.sh` on [line 3](https://github.com/Weiming-Hu/AnalogsEnsemble/blob/2ab0a1a5049917a1c55ef258cc725bb63fe6b780/apps/app_gribConverter/example/convertForecasts.sh#L3), I specified the number of threads to be created in the program. It is NOT the case that the more threads you create the faster your program will run. This also depends on your network quality. Because when too many threads are created, it actually slows download the file transfer process. For my case where the maximum network speed can go up until ~30 MB/s, I found that when I created more than 5 threads, it will slow down the network. Therefore, I tested with creating 1, 2, 3, and 5 threads, and decided I should only create 3 which should be a fairly balanced point.
+Please note in the file `convertForecasts.sh` on [line 3](https://github.com/uga-gaim/AnalogEnsemble/blob/2ab0a1a5049917a1c55ef258cc725bb63fe6b780/apps/app_gribConverter/example/convertForecasts.sh#L3), I specified the number of threads to be created in the program. It is NOT the case that the more threads you create the faster your program will run. This also depends on your network quality. Because when too many threads are created, it actually slows download the file transfer process. For my case where the maximum network speed can go up until ~30 MB/s, I found that when I created more than 5 threads, it will slow down the network. Therefore, I tested with creating 1, 2, 3, and 5 threads, and decided I should only create 3 which should be a fairly balanced point.
 
 ## Summary
 
 This post explains the typical way to use the `girbConverter`. There are some options not covered in this article, please refered to `gribConverter --help`.
 
-Please report any issues [here](https://github.com/Weiming-Hu/AnalogsEnsemble/issues). Thank you.
+Please report any issues [here](https://github.com/uga-gaim/AnalogEnsemble/issues). Thank you.
 
 ```
 # "`-''-/").___..--''"`-._

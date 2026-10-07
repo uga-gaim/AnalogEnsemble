@@ -29,28 +29,28 @@ tags:
 
 ## Introduction
 
-This file documents the process of profiling analysis of the weather forecast technique [`Analog Ensemble`](https://weiming-hu.github.io/AnalogsEnsemble/).
+This file documents the process of profiling analysis of the weather forecast technique [`Analog Ensemble`](https://analogensemble.ddns.net/).
 
 ## Result Preview
 
 These figures are generated using TAU profiler and the visualization tools `paraprof`.
 
-![time-breakdown](https://github.com/Weiming-Hu/AnalogsEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/tau-breakdown-by-thread.png)
-![time-3D](https://github.com/Weiming-Hu/AnalogsEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/tau-3D.png)
-![time-threads](https://github.com/Weiming-Hu/AnalogsEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/tau-threads.png)
+![time-breakdown](https://github.com/uga-gaim/AnalogEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/tau-breakdown-by-thread.png)
+![time-3D](https://github.com/uga-gaim/AnalogEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/tau-3D.png)
+![time-threads](https://github.com/uga-gaim/AnalogEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/tau-threads.png)
 
 The following figure is generated from `gprof`.
 
-![time-dot-graph](https://github.com/Weiming-Hu/AnalogsEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/gprof.png)
+![time-dot-graph](https://github.com/uga-gaim/AnalogEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/gprof.png)
 
 ## Preparation and Clarification
 
 Please note a couple of placeholders in this tutorial. It is recommended to use the absolute full path to replace them.
 
 - [Allocation Name] is the project name you are attached to. It shows up every time when you log onto ICS.
-- [Analog Ensemble Source Dir] is the root directory of Analog Ensemble programs. You can download it from [Github](https://github.com/Weiming-Hu/AnalogsEnsemble).
+- [Analog Ensemble Source Dir] is the root directory of Analog Ensemble programs. You can download it from [Github](https://github.com/uga-gaim/AnalogEnsemble).
 - [TAU Source Dir] is the folder all TAU source files are extracted to. You can download TAU [here](https://www.cs.uoregon.edu/research/tau/downloads.php);
-- [Profile Data Dir] is the folder with profile data and a configuration file. Please generate the profile data using the R script [generateAnEnInput.R](https://github.com/Weiming-Hu/AnalogsEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/generateAnEnInput.R) by running `Rscript generateAnEnInput.R` in a console. The R package `ncdf4` is required. The configuration file is [config.cfg](https://github.com/Weiming-Hu/AnalogsEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/config.cfg).
+- [Profile Data Dir] is the folder with profile data and a configuration file. Please generate the profile data using the R script [generateAnEnInput.R](https://github.com/uga-gaim/AnalogEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/generateAnEnInput.R) by running `Rscript generateAnEnInput.R` in a console. The R package `ncdf4` is required. The configuration file is [config.cfg](https://github.com/uga-gaim/AnalogEnsemble/raw/gh-pages/assets/posts/2019-01-08-Profile-AnEn/config.cfg).
 
 ## Profiling with TAU
 

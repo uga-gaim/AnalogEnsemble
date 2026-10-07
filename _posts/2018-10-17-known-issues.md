@@ -45,7 +45,7 @@ It is highly possible that you need to update your `Xcode` and run some configur
 /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
 ```
 
-You should be good to go for the installation. There is also [a ticket for this issue](https://github.com/Weiming-Hu/AnalogsEnsemble/issues/13) for more details.
+You should be good to go for the installation. There is also [a ticket for this issue](https://github.com/uga-gaim/AnalogEnsemble/issues/13) for more details.
 
 #### `NetBeans` does not recognize the executables after building the C++ programs.
 
@@ -69,7 +69,7 @@ If you are using the C++ programs, you need to first build tests by specifying `
 
 #### Compilation failure on Windows
 
-Please see the [article](https://weiming-hu.github.io/AnalogsEnsemble/2018/10/10/installation-on-windows.html).
+Please see the [article](https://analogensemble.ddns.net/2018/10/10/installation-on-windows.html).
 
 #### Dynamic linking error on MacOS.
 
