@@ -18,7 +18,7 @@
 #' @details 
 #' The observation list is an R list with members including `ParameterNames`,
 #' `Xs`, `Ys`, `Data`, and etc., with a full list accessible
-#' [here](https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html#observations).
+#' [here](https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html#observations).
 #' RAnEn::formatObservations make it easier to convert a data frame into
 #' a such list data structure.
 #' 
@@ -51,7 +51,7 @@
 #' @examples 
 #' \dontrun{
 #' # How to download this file? Please see the tutorial
-#' # https://github.com/Weiming-Hu/AnalogsEnsemble/blob/master/RAnalogs/examples/demo-5_observation-conversion.Rmd
+#' # https://github.com/uga-gaim/AnalogEnsemble/blob/master/RAnalogs/examples/demo-5_observation-conversion.Rmd
 #' #
 #' obs <- read.table('~/Desktop/hourly_44201_2019.csv',
 #'                   sep = ',', quote = '"', header = T, stringsAsFactors = F)

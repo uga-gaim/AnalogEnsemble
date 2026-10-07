@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 if (packageVersion('RAnEn') < "3.7.0") {
   install.packages(
-    "https://github.com/Weiming-Hu/AnalogsEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz",
+    "https://github.com/uga-gaim/AnalogEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz",
     repos = NULL)
 }
 
@@ -24,13 +24,13 @@ library(ggplot2)
 
 The functionality of this script has been included and converted to a function `RAnEn::formatObservations`. It is recommended to use this function instead of doing the conversion manually.
 
-If you have questions, please ask [here](https://github.com/Weiming-Hu/AnalogsEnsemble/issues).
+If you have questions, please ask [here](https://github.com/uga-gaim/AnalogEnsemble/issues).
 
 ## Introduction
 
 Tutorial shows an example of converting a data frame to a list with the format that is required for analog generation.
 
-The accepted format for observations can be found [here](https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html#observations). It can be either an NetCDF file on the disk or a list in R. In this tutorial, we are going to create the accepted observation list in R. This R list can then be written to your disk as an NetCDF file, read back into R, and used by `RAnEn` easily.
+The accepted format for observations can be found [here](https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html#observations). It can be either an NetCDF file on the disk or a list in R. In this tutorial, we are going to create the accepted observation list in R. This R list can then be written to your disk as an NetCDF file, read back into R, and used by `RAnEn` easily.
 
 ## Data Access
 
@@ -145,7 +145,7 @@ length(unique(obs$Station.ID))
 
 ## Create the Observation List
 
-Now that we have examined the dataset, we can go ahead and create the observation list. Keep in mind that, our list should have [these members as specified in the convention](https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html#observations).
+Now that we have examined the dataset, we can go ahead and create the observation list. Keep in mind that, our list should have [these members as specified in the convention](https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html#observations).
 
 ```{r}
 # We leave out some optional parameters because

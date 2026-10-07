@@ -550,8 +550,8 @@ AnEnWriteNcdf::addMeta_(netCDF::NcGroup & nc) const {
     Ncdf::writeStringAttribute(nc, "Institute Link", "http://geolab.psu.edu", true);
     Ncdf::writeStringAttribute(nc, "Package", "Parallel Analog Ensemble", true);
     Ncdf::writeStringAttribute(nc, "Package Version", _APPVERSION, true);
-    Ncdf::writeStringAttribute(nc, "Package Link", "https://weiming-hu.github.io/AnalogsEnsemble", true);
-    Ncdf::writeStringAttribute(nc, "Report Issues", "https://github.com/Weiming-Hu/AnalogsEnsemble/issues", true);
+    Ncdf::writeStringAttribute(nc, "Package Link", "https://analogensemble.ddns.net", true);
+    Ncdf::writeStringAttribute(nc, "Report Issues", "https://github.com/uga-gaim/AnalogEnsemble/issues", true);
     return;
 }
 

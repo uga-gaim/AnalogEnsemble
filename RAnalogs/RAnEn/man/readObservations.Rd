@@ -18,7 +18,7 @@ A list object.
 }
 \description{
 RAnEn::readObservations reads observation data from the NetCDF file with a
-\href{https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html}{standard format}.
+\href{https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html}{standard format}.
 Most often, the file should be created from gribConverter.
 }
 \author{

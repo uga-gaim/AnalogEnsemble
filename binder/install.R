@@ -29,7 +29,7 @@ install.packages("raster")
 install.packages("Rcpp")
 install.packages("BH")
 install.packages("maps")
-install.packages("https://github.com/Weiming-Hu/AnalogsEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
+install.packages("https://github.com/uga-gaim/AnalogEnsemble/raw/master/RAnalogs/releases/RAnEn_latest.tar.gz", repos = NULL)
 
 install.packages("devtools")
 devtools::install_github('Weiming-Hu/RAnEnExtra')

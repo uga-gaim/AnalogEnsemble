@@ -18,7 +18,7 @@ stopifnot(packageVersion('RAnEn')>="3.2.5")
 
 ## Introduction
 
-This article demonstrates how to use the search space functionality within the `RAnEn` package. If you haven't done so, please read [the instructions for basic usage of `RAnEn`](https://weiming-hu.github.io/AnalogsEnsemble/2018/11/04/demo-1-RAnEn-basics.html) first. This article skips the part that has been covered in the previous article.
+This article demonstrates how to use the search space functionality within the `RAnEn` package. If you haven't done so, please read [the instructions for basic usage of `RAnEn`](https://analogensemble.ddns.net/2018/11/04/demo-1-RAnEn-basics.html) first. This article skips the part that has been covered in the previous article.
 
 The classic `AnEn` technique searches for the most similar historical foreasts at its current location. Therefore, only forecasts from the current station/grid point will be traversed and compared. This search style is referred to as the *Independent Search (IS)*. Another possible search style is extended search, which is referred to as *Search Space Extension (SSE)*. It simply indicates that forecasts at nearby stations/grid points are included in the search process. As a result, the search space is significantly larger when using the search space extension.
 
@@ -30,7 +30,7 @@ You will learn how to use these functions:
 
 ## Data Description
 
-We reuse the data from the [demo 1 AnEn Basics](https://weiming-hu.github.io/AnalogsEnsemble/2018/11/04/demo-1-RAnEn-basics.html). Please refer to the article for a more detailed data description.
+We reuse the data from the [demo 1 AnEn Basics](https://analogensemble.ddns.net/2018/11/04/demo-1-RAnEn-basics.html). Please refer to the article for a more detailed data description.
 
 ```{r}
 file.name <- 'data-NAM-StateCollege.RData'
@@ -51,7 +51,7 @@ rm(file.name)
 
 The process to generate AnEn IS and AnEn SSE forecasts are similar. First, we create a configuration and the following settings are migrated from the independent search tutorial. **Please note the difference when we specify the type of configuration**.
 
-For a full list of avaiable options, please check the document for [RAnEn::generateConfiguration](https://weiming-hu.github.io/AnalogsEnsemble/R/reference/generateConfiguration.html).
+For a full list of avaiable options, please check the document for [RAnEn::generateConfiguration](https://analogensemble.ddns.net/R/reference/generateConfiguration.html).
 
 ```{r}
 # Create a configuration for SSE
@@ -119,7 +119,7 @@ config$save_similarity_time_index <- T
 config$save_search_stations_index <- T
 ```
 
-Similar to the [RAnEn basic tutorial](https://weiming-hu.github.io/AnalogsEnsemble/2018/11/04/demo-1-RAnEn-basics.html) we can generate AnEn. This might take a while. On a Mac Air, it takes about 3 minutes.
+Similar to the [RAnEn basic tutorial](https://analogensemble.ddns.net/2018/11/04/demo-1-RAnEn-basics.html) we can generate AnEn. This might take a while. On a Mac Air, it takes about 3 minutes.
 
 ```{r}
 AnEn <- generateAnalogs(forecasts, observations, test.times, search.times, config, 'SSE')
@@ -152,7 +152,7 @@ obs <- alignObservations(observations$Data, observations$Times,
 obs <- obs[config$observation_id, , , ]
 ```
 
-Then we can generate the same verification statistics, and see how AnEn is performing. You can also compare this with results from [the AnEn basic tutorial](https://weiming-hu.github.io/AnalogsEnsemble/2018/11/04/demo-1-RAnEn-basics.html), and see how they are different.
+Then we can generate the same verification statistics, and see how AnEn is performing. You can also compare this with results from [the AnEn basic tutorial](https://analogensemble.ddns.net/2018/11/04/demo-1-RAnEn-basics.html), and see how they are different.
 
 ``` {r}
 # Generate verification metrics

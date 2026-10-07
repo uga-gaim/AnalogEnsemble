@@ -69,7 +69,7 @@ by analog computation.
 \details{
 The AnEn Forecasts is an R list with members including \code{ParameterNames},
 \code{Xs}, \code{Ys}, \code{Data}, and etc., with a full list accessible
-\href{https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html#forecasts}{here}.
+\href{https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html#forecasts}{here}.
 RAnEn::formatForecasts make it easier to convert a data frame into
 a such list data structure.
 

@@ -97,7 +97,7 @@ using namespace std;
  *
  * If you want to find some quick test data files, you can access them here.
  *
- * https://github.com/Weiming-Hu/AnalogsEnsemble/tree/master/tests/Data
+ * https://github.com/uga-gaim/AnalogEnsemble/tree/master/tests/Data
  */
 class ParameterGrib : public Parameter {
 public:

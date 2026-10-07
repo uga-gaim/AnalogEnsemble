@@ -18,7 +18,7 @@
 #' @details 
 #' The AnEn Forecasts is an R list with members including `ParameterNames`,
 #' `Xs`, `Ys`, `Data`, and etc., with a full list accessible
-#' [here](https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html#forecasts).
+#' [here](https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html#forecasts).
 #' RAnEn::formatForecasts make it easier to convert a data frame into
 #' a such list data structure.
 #' 

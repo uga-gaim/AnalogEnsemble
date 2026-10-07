@@ -18,7 +18,7 @@ stopifnot(packageVersion('RAnEn')>="3.5.0")
 
 ## Introduction
 
-This article walks you through the basic usage of the `RAnEn` library. This exercise uses short-term surface temperature forecasts as an example. Recommend using [binder](https://mybinder.org/v2/gh/Weiming-Hu/AnalogsEnsemble/master?urlpath=rstudio) and the corresponding `.Rmd` file will guide you through the script line by line.
+This article walks you through the basic usage of the `RAnEn` library. This exercise uses short-term surface temperature forecasts as an example. Recommend using [binder](https://mybinder.org/v2/gh/uga-gaim/AnalogEnsemble/master?urlpath=rstudio) and the corresponding `.Rmd` file will guide you through the script line by line.
 
 You will learn how to use these functions:
 
@@ -83,7 +83,7 @@ Now that we have a general idea of the data, we can generate temperature forecas
 - Set up options
 - Generate AnEn
 
-First, we set up the configuration. We generate an AnEn for one day using about one year of historical data for all the grid points available. For a full list of avaiable options, please check the document for [RAnEn::generateConfiguration](https://weiming-hu.github.io/AnalogsEnsemble/R/reference/generateConfiguration.html).
+First, we set up the configuration. We generate an AnEn for one day using about one year of historical data for all the grid points available. For a full list of avaiable options, please check the document for [RAnEn::generateConfiguration](https://analogensemble.ddns.net/R/reference/generateConfiguration.html).
 
 ```{r}
 # We then generate a configuration

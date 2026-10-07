@@ -22,7 +22,7 @@ set -e
 # Check for later versions at https://confluence.ecmwf.int/display/ECC/Releases
 #
 # Submit a ticket if you see this is no longer the latest version :D
-# https://github.com/Weiming-Hu/AnalogsEnsemble/issues
+# https://github.com/uga-gaim/AnalogEnsemble/issues
 #
 export ECCODES_VERSION=2.24.1
 

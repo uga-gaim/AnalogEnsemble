@@ -1,13 +1,13 @@
 repo:
   url:
-    home: https://weiming-hu.github.io/AnalogsEnsemble/
-    source: https://github.com/Weiming-Hu/AnalogsEnsemble/blob/master/RAnalogs/RAnEn/
-    issue: https://github.com/Weiming-Hu/AnalogsEnsemble/issues/
+    home: https://analogensemble.ddns.net/
+    source: https://github.com/uga-gaim/AnalogEnsemble/blob/master/RAnalogs/RAnEn/
+    issue: https://github.com/uga-gaim/AnalogEnsemble/issues/
     user: https://github.com/Weiming-Hu/
 
 authors:
   Weiming Hu:
-    href: https://weiming.ddns.net
+    href: https://weiming.uga.edu
   Guido Cervone:
     href: http://geoinf.psu.edu/
   Laura Clemente:

@@ -14,9 +14,9 @@ RAnEn is the R package implementing the Analog Ensemble method and more with dat
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://weiming-hu.github.io/AnalogsEnsemble/}
-  \item \url{https://github.com/Weiming-Hu/AnalogsEnsemble}
-  \item Report bugs at \url{https://github.com/Weiming-Hu/AnalogsEnsemble/issues}
+  \item \url{https://analogensemble.ddns.net/}
+  \item \url{https://github.com/uga-gaim/AnalogEnsemble}
+  \item Report bugs at \url{https://github.com/uga-gaim/AnalogEnsemble/issues}
 }
 
 }

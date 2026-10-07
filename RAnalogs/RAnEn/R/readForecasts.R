@@ -13,7 +13,7 @@
 #' RAnEn::readForecasts
 #' 
 #' RAnEn::readForecasts reads forecast data from the NetCDF file with a
-#' [standard format](https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html).
+#' [standard format](https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html).
 #' Most often, the file should be created from gribConverter.
 #' 
 #' @author Weiming Hu \email{weiming@@psu.edu}

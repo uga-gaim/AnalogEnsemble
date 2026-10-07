@@ -65,7 +65,7 @@ by analog computation.
 \details{
 The observation list is an R list with members including \code{ParameterNames},
 \code{Xs}, \code{Ys}, \code{Data}, and etc., with a full list accessible
-\href{https://weiming-hu.github.io/AnalogsEnsemble/2019/01/16/NetCDF-File-Types.html#observations}{here}.
+\href{https://analogensemble.ddns.net/2019/01/16/NetCDF-File-Types.html#observations}{here}.
 RAnEn::formatObservations make it easier to convert a data frame into
 a such list data structure.
 
@@ -76,7 +76,7 @@ with \code{dplyr} functions.
 \examples{
 \dontrun{
 # How to download this file? Please see the tutorial
-# https://github.com/Weiming-Hu/AnalogsEnsemble/blob/master/RAnalogs/examples/demo-5_observation-conversion.Rmd
+# https://github.com/uga-gaim/AnalogEnsemble/blob/master/RAnalogs/examples/demo-5_observation-conversion.Rmd
 #
 obs <- read.table('~/Desktop/hourly_44201_2019.csv',
                   sep = ',', quote = '"', header = T, stringsAsFactors = F)

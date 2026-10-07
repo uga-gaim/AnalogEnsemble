@@ -88,11 +88,11 @@ if(ENABLE_AI)
 
             "If you want to use the spatial metric, you also need to include -DBUILD_PYGRID=ON -DBUILD_SHARED_LIBS=ON "
             "-DPYTHON_EXECUTABLE=<python exec>. DO NOT run `make install` after `make`."
-            " Reasons here https://github.com/Weiming-Hu/AnalogsEnsemble/issues/81#issuecomment-816703664\n"
+            " Reasons here https://github.com/uga-gaim/AnalogEnsemble/issues/81#issuecomment-816703664\n"
 
             "If you have multiple paths in CMAKE_PREFIX_PATH or CMAKE_INSTALL_RPATH, use double quotes and ; as the separator.\n"
 
-            "If you still have problems, please open a ticket or check https://github.com/Weiming-Hu/AnalogsEnsemble/issues/110.\n"
+            "If you still have problems, please open a ticket or check https://github.com/uga-gaim/AnalogEnsemble/issues/110.\n"
 
             "An example for cmake would be: cmake -DPYTHON_EXECUTABLE=[python executable] -DBUILD_PYGRID=ON -DBUILD_SHARED_LIBS=ON -DENABLE_AI=ON"
             " -DCMAKE_INSTALL_RPATH=[libtorch lib] -DCMAKE_PREFIX_PATH=[libtorch root] -DCMAKE_INSTALL_PREFIX=[install path] ..")
@@ -170,7 +170,7 @@ Programs MIGHT HANG when you are not launching the program properly
 or if you are overtasking the machine.
 
 Please refer to the README for suggestions and more information.
-https://weiming-hu.github.io/AnalogsEnsemble/doc#mpi-openmp
+https://analogensemble.ddns.net/doc#mpi-openmp
 
 ***************************************************************
         ")
